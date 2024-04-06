@@ -1,0 +1,31 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("ghxst exploits")
+
+local serv = win:Server("ghxst stuffs", "")
+
+local btns = serv:Channel("Farms")
+
+btns:Button("Reb Farm", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VBallsYCUKER/theautoframe/main/autorbs", true))()
+DiscordLib:Notification("Notification", "Farming", "Close")
+end)
+
+btns:Seperator()
+
+btns:Button("Stat Farm (coming soon, dont click)", function()
+
+DiscordLib:Notification("Notification", "Farming", "Close")
+end)
+    
+btns:Seperator()
+
+btns:Button("Stat Reader", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/VBallsYCUKER/reader/main/stat", true))()
+    DiscordLib:Notification("Notification", "Reading Stats", "Close")
+    end)
+
+
+
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
